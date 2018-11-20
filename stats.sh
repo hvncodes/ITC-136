@@ -3,10 +3,11 @@
 echo "welcome to the stats.sh file!"
 
 echo "how much disk space has been used"
-du -h
+diskused=$( df -h | grep "dev/sda1" | awk '{print $5}' )
+echo $diskused
 
 echo "how much memory is free"
-df -h | grep "dev/sda1" | awk '{print $5}'
+df
 
 echo "how many connections there are to the current machine"
 netstat | grep tcp
