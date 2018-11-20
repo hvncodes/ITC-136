@@ -15,4 +15,23 @@ connections=$( netstat | grep tcp )
 echo $connections
 
 echo "who is logged in"
-who
+users=$( who )
+echo $users
+
+echo "This is a snapshot of your current system:
+
+
+                    Disk Used: $diskused
+                    Free Memory: $memfree
+                    Logged in Users: $users
+                    
+Open Internet Connections:
+$connections
+"
+
+echo "
+color info:
+https://www.maketecheasier.com/8-useful-and-interesting-bash-prompts/
+
+
+"
