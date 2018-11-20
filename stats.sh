@@ -6,7 +6,7 @@ echo "how much disk space has been used"
 du -h
 
 echo "how much memory is free"
-df -h
+df -h | grep "dev/sda1" | awk '{print $5}'
 
 echo "how many connections there are to the current machine"
 netstat | grep tcp
