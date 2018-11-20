@@ -11,7 +11,8 @@ memfree=$( free -mh | grep Mem: | awk '{print $7}' )
 echo $memfree
 
 echo "how many connections there are to the current machine"
-netstat | grep tcp
+connections=$( netstat | grep tcp )
+echo $connections
 
 echo "who is logged in"
 who
