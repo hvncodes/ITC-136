@@ -7,7 +7,8 @@ diskused=$( df -h | grep "dev/sda1" | awk '{print $5}' )
 echo $diskused
 
 echo "how much memory is free"
-df
+memfree=$( free -mh | grep Mem: | awk '{print $7}' )
+echo $memfree
 
 echo "how many connections there are to the current machine"
 netstat | grep tcp
