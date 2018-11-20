@@ -2,36 +2,28 @@
 
 echo "welcome to the stats.sh file!"
 
-echo "how much disk space has been used"
 diskused=$( df -h | grep "dev/sda1" | awk '{print $5}' )
-echo $diskused
-
-echo "how much memory is free"
 memfree=$( free -mh | grep Mem: | awk '{print $7}' )
-echo $memfree
-
-echo "how many connections there are to the current machine"
 connections=$( netstat | grep tcp )
-echo $connections
-
-echo "who is logged in"
 users=$( who )
-echo $users
 
-echo "This is a snapshot of your current system:
+echo -en "This is a snapshot of your current system:
 
 
-                    Disk Used: $diskused
-                    Free Memory: $memfree
-                    Logged in Users: $users
-                    
+            \e[91m  Disk Used: $diskused
+            \e[92m  Free Memory: $memfree
+            \e[94m  Logged in Users: $users
+
+\e[32m                    
 Open Internet Connections:
-$connections
+\e[34m
+$connections\e[0m
 "
-
-echo "
+echo -e "\e[42m
 color info:
-https://www.maketecheasier.com/8-useful-and-interesting-bash-prompts/
-
-
+http://jafrog.com/2013/11/23/colors-in-terminal.html
+https://misc.flogisoft.com/bash/tip_colors_and_formatting
+http://wiki.bash-hackers.org/scripting/style
+END END END END END END END END END END END END END END END END\e[0m
+Before\e[0mDefault
 "
