@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=5.0
+Name=Stats
+Comment=whatever comment i would like
+Exec=/usr/bin/gnome-terminal -e "bash -c '/usr/local/bin/stats; bash'"
+Icon=/home/jnguyen01/Desktop/boat-20181121.png
+Terminal=false
+Type=Application
+Categories=Utility;Applications;
