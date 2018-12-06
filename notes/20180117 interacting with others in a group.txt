@@ -1,0 +1,41 @@
+﻿jnguyen01@172.31.79.146
+
+sudo apt-get install vim
+
+ps aux | grep username
+kill PID
+
+to kill all of a user's process
+sudo killall -u username
+
+ps aux | grep top
+
+ls -l /home to see permissions of users
+chmod calculator to help set permissions
+
+renice –n -19 –p ProcessID
+
+
+sudo addgroup new_group
+sudo usermod -a -G new_group jnguyen01
+sudo usermod -a -G new_group andywilson1
+sudo usermod -a -G new_group lameckonduso1
+sudo usermod -a -G new_group natreid1
+
+tail /etc/group
+
+groups jnguyen01
+
+mkdir newdir
+sudo groupadd new_group3
+
+sudo chgrp new_group3 newdir
+ls -l
+chmod 070 newdir
+
+•	Writing a message to all users logged into the machine
+wall “hey y’all”
+•	Writing a message to a specific user logged into your machine
+echo “text” | write username
+
+sudo apt-get install talk talkd

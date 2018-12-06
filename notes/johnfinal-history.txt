@@ -1,0 +1,42 @@
+    1  apt-get install openssh-server
+    2  systemctl restart sshd
+    3  ifconfig
+    4  systemctl status sshd
+    5  sudo adduser jnguyen
+    6  sudo adduser nicole
+    7  ps aux | grep nicole
+    8  sudo kill 9557
+    9  ps aux | grep nicole
+   10  top
+   11  history >> history.txt
+
+    1  apt-get install openssh-server
+    2  systemctl restart sshd
+    3  ifconfig
+    4  systemctl status sshd
+    5  sudo adduser jnguyen
+    6  sudo adduser nicole
+    7  ps aux | grep nicole
+    8  sudo kill 9557
+    9  ps aux | grep nicole
+   10  top
+   11  history >> history.txt
+   12  ls
+   13  cd ~
+   14  ls
+   15  history >> history2.txt
+    1  apt-get install openssh-server
+    2  systemctl restart sshd
+    3  ifconfig
+    4  systemctl status sshd
+    5  sudo adduser jnguyen
+    6  sudo adduser nicole
+    7  ps aux | grep nicole
+    8  sudo kill 9557
+    9  ps aux | grep nicole
+   10  top
+   11  history >> history.txt
+   12  ls
+   13  cd ~
+   14  ls
+   15  history >> history2.txt

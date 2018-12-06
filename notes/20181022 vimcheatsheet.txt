@@ -1,0 +1,38 @@
+vim cheat sheet
+
+vi newfile
+	creates a new file with the name "newfile" with no extension, if you want a text file, add ".txt"
+inside vi, press "i" to insert/start typing
+
+esc -> :q! 
+	to exit without saving
+
+sudo apt-get install vim
+	installs/updates vim
+
+esc -> gg 
+	brings you to the top
+
+esc -> G
+	brings you to the bottom
+	
+esc -> :5 
+	brings us to line number 5
+
+esc -> /text 
+	to search for the phrase "text" and to tab between matches press the key 'n' or 'shift+n'
+
+esc -> :%s/text/texty/g
+	replace all "text" with "texty", remove the "%" if you only want to affect the line you are currently selecting
+	
+esc -> :w
+	writes file into the system, basically saving the file
+	
+esc -> :x or zz
+	exits vim and saves changes to the file if changes were made
+
+esc -> :split FILENAME
+	opens FILENAME file in a second window
+	ctrl+w+w (press w twice) switches between the split windows
+	something interesting I found that if you split the SAME file, edits made to one will affect both splits, 
+	but that's kinda pointless since it's the same exact file and all

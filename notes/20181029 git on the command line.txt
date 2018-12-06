@@ -1,0 +1,29 @@
+sudo apt-get install git
+
+git clone https://gihub.com/hvncodes/itc.136.git
+
+ls -l to view directory
+vim NameOfNewScript.sh to begin editting new script file
+
+bash NameOfNewScript to run script
+
+git status shows the status of the staging area
+
+git add NameOfNewScript or git add . to add those changes to the "index"
+or the staging area
+
+The "index" holds a snapshot of the content of the working tree, and it 
+is this snapshot that is taken as the contents of the next commit. Thus
+after making any changes to the working tree, and before running the
+commit command, you must use the add command to add any new or modified
+files to the index.
+
+***YOU MAY NEED THIS***
+git config --global user.name "githubusername"
+git config --global user.email "github@email.com
+git commit -m "message goes here" records the changes into the local repo
+
+
+git push puts those changes onto the remote server
+
+git pull pulls the changes from the remote server to your local repo
